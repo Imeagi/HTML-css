@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'ss';
+    src: url('Beverley.otf') format('opentype'), url('Beverley.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+body{
+    background-color: black;
+}
+
+div{
+    display: inline-table;
+    background-color: rgba(0, 0, 139, 0.247);
+    border:  4px solid rgb(10, 9, 15);
+    text-align: center;
+    height: 200px;
+    width: 400px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:active{
+    color: rgb(10, 255, 1);
+}
+
+
+div > h1 {
+    display: none;
+}
+
+div::after{
+    content: '✣';
+}
+
+div::before{
+    content: '✣';
+}
+
+div#d1:hover > h1 {
+    display: block;
+    font-family: 'ss','Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+
+}
+
+div#d1:hover{
+    background-image: 
+    linear-gradient(to left, rgb(83, 0, 0), rgb(51, 0, 40));
+}
+
+div#d2:hover > h1 {
+    display: block;
+    font-family: 'ss','Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(214, 3, 204);
+
+}
+
+div#d2:hover{
+    background-image: 
+    linear-gradient(to left, rgba(45, 0, 128, 0.5), rgba(128, 5, 101, 0.5));
+    
+}
+
+div#d3:hover > h1 {
+    display: block;
+    font-family: 'ss','Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(51, 1, 48);
+
+}
+
+div#d3:hover{
+    background-image: 
+    linear-gradient(to left, rgba(219, 216, 0, 0.5), rgba(64, 128, 5, 0.5));
+    
+}
