@@ -7,14 +7,32 @@
     <title>Teste imagens de Fundo</title>
     <style>
         div.quadrado{
-            margin: 2px solid black;
+            display: inline-block;
+            border: 2px solid rgba(0, 0, 0, 0.486);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        div#a1{background-color: aquamarine;
+        }
+
+        div#a2{
+            background-image: linear-gradient( to bottom, rgba(255, 255, 0, 0.575), rgba(255, 1, 1, 0.61));
+        }
+
+        div#a3{
+            background-image: url(imagens/pattern003.png);
+        }
+        body{
+            background-image: url(imagens/pattern002.png);
         }
     </style>
 </head>
 <body>
-    <div class="quadrado" id="01"></div>
-    <div class="quadrado" id="02"></div>
-    <div class="quadrado" id="03"></div>
+    <div class="quadrado" id="a1"></div>
+    <div class="quadrado" id="a2"></div>
+    <div class="quadrado" id="a3"></div>
     
 </body>
 </html>
